@@ -1,0 +1,226 @@
+/*--debugging------------------*/
+.red{ border: 1px dashed red!important;}
+.blue{ border: 1px dashed blue!important;}
+.green{ border: 1px dashed green!important;}
+.bg_red{ background-color: red!important;}
+.bg_blue{ background-color: blue!important;}
+.bg_green{ background-color: green!important;}
+
+/*--global------------------*/
+.left{ float: left;}
+.right{ float: right;}
+.relative{ position: relative;}
+.clear{ clear: both;}
+#main-wrapper{
+	
+}
+div{ margin: 0px; }
+body{ 
+	font-size: 20px; 
+	font-family: "Source Sans Pro", sans-serif;
+	color: #222222;
+}
+
+
+/*--top------------------*/
+$top-bg: #303437;
+$top-color: #ffffff;
+$top-filter-font: 15px;
+
+#main-top{
+	
+	background-color: $top-bg;
+	color: $top-color;
+	text-align: center;
+
+	#top-title{
+		display: block;
+		padding: 20px 0px;
+		font-size: 24px;
+		position: relative;
+		
+		.top-side{
+			width: 40%;
+			text-align: center;
+			display: inline-block;
+			font-size: 14px;
+			position: absolute;
+			top: 50%;
+			line-height: 20px;
+			margin-top: -10px;
+		}
+		#top-side-left{
+			left: 0px;
+		}
+		#top-side-right{
+			right: 0px;
+			
+			span{
+				position: relative;
+			}
+			img{
+				position: absolute;
+				width: 32px;
+				height: 32px;
+				top: 50%;
+				margin-top: -16px;
+				margin-left: -40px;
+			}
+		}
+	}	
+	
+	#top-filter{
+		display: block;
+		margin: 10px 3%;
+		padding: 15px 20px;
+		border-top: 3px solid $top-color;
+		
+		.top-filter-select{
+			float: left;
+			display: inline-block;
+			padding: 2px;
+
+			select{
+				padding: 5px 15px;
+				background-color: $top-bg;
+				border: 0px;
+				color: $top-color;
+				font-size: $top-filter-font;
+			}
+		}
+		span{
+			float: left;
+			padding: 5px;
+		}
+	}
+}
+	
+
+/*--content------------------*/
+.bg-skyblue{ background: #24AAE1; }
+.bg-green{ background: #2BB572; }
+.bg-blue{ background: #2BB572; }
+.bg-pink{ background: #F176AD; }
+.bg-red{ background: #BE1D2C; }
+
+$margin-inner-y: 7px; 
+$margin-inner-x: 14px;
+$margin-outer: 20px; 
+$class-w: 200px;
+$class-h: 150px;
+#main-content{
+	position: relative;
+	
+	#time-container{
+		width: 50px;
+		position: absolute;
+		left: 0px;
+		top: 165px;
+		height: 100%;
+		display: inline-block;
+		.class-schedule{
+			text-align: right;
+			height: $class-h;
+			margin: $margin-inner-x 0px;
+			.time-hour{
+				margin-top: 5px;
+			}
+			.time-min{
+				opacity: 0.3;
+				font-size: 14px;
+				margin-top: 20px;
+			}
+		}
+		
+	}
+	
+	#schedules{
+		display: block;
+		margin-left: 60px;
+		overflow-x: auto;
+		white-space: nowrap;
+		
+		.week{
+			display: inline-block;
+			text-align: center;
+			margin-left: -4px;
+			&:first-of-type{
+				margin-left: 0px;
+			}
+			margin: 0px $margin-outer;
+		}
+		.week-name{
+			font-family: "Lato-Regular";
+			text-align: center;
+			color: #878786;
+			padding: 18px;
+			border-bottom: 1px solid gray;
+		}
+		.week-activity{
+			padding: 5px;
+			text-align: center;	
+			background-color: #ececec;
+			color: #878786;
+		}
+		.day-schedule{
+			float: left;
+		}
+		.day-class-student{
+			text-align: center;
+			padding: 20px;
+		}
+		.day-class{
+			margin: $margin-inner-x $margin-inner-y;
+			width: $class-w;
+			height: $class-h;
+			color: #ffffff;
+			border: 1px solid #ffffff;
+			.day-class-inner{
+				margin: 15px;
+				position: relative;
+				text-align: left;
+
+				div{
+					margin: 8px 0px;
+				}
+				.day-class-time{
+					font-size: 22px;
+				}
+				.day-class-action{
+					font-size: 25px;
+				}
+				.day-class-by{
+					margin-top: 16px;
+					font-size: 15px;
+				}
+				.day-class-text{
+					opacity: 0.7;
+					white-space: nowrap; 
+					overflow: hidden;
+					text-overflow: ellipsis;
+					font-size: 16px;
+				}
+				img{
+					width: 35px;
+					height: 35px;
+					position: absolute;
+					top: -5px;
+					right: 0px;
+				}
+				.day-class-rate{
+					position: absolute;
+					bottom: -10px;
+					right: -0px;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+}
+/*--footer------------------*/
+#main-footer{
+
+	border: 1px dashed red;
+	text-align: center;
+	padding: 20px;
+}
