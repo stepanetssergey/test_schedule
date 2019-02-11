@@ -1,0 +1,252 @@
+
+
+/*--global------------------*/
+$font: "Lato";
+$font_light:100;
+$font_regular:400;
+$font_bold:700;
+$font_black:900;
+
+.left{ float: left;}
+.right{ float: right;}
+.relative{ position: relative;}
+.clear{ clear: both;}
+.main-wrapper{
+	
+}
+div{ margin: 0px; }
+body{ 
+	font-size: 20px; 
+	color: #222222;
+	font-family: $font;
+}
+
+
+/*--top------------------*/
+$top-bg: #303437;
+$top-color: #ffffff;
+$top-filter-font: 15px;
+.main-top{
+	
+	background-color: $top-bg;
+	color: $top-color;
+	text-align: center;
+
+	.top-title{
+		display: block;
+		padding: 20px 0px;
+		font-size: 34px;
+		position: relative;
+		font-family: $font;
+		font-weight: $font_light;
+		
+		
+		.top-side{
+			width: 25%;
+			text-align: center;
+			display: inline-block;
+			font-size: 14px;
+			position: absolute;
+			top: 50%;
+			line-height: 20px;
+			margin-top: -10px;
+			font-family: $font;
+			font-weight: $font_light;
+			color: #a7a7a7;
+		}
+		.top-side-left{
+			left: 0px;
+		}
+		.top-side-right{
+			right: 0px;
+			
+			span{
+				position: relative;
+			}
+			img{
+				position: absolute;
+				width: 32px;
+				height: 32px;
+				top: 50%;
+				margin-top: -16px;
+				margin-left: -40px;
+			}
+		}
+	}	
+	
+	.top-filter{
+		display: block;
+		margin: 10px 3%;
+		padding: 15px 20px;
+		border-top: 1px solid #ececec;
+		
+		.top-filter-select{
+			float: left;
+			display: inline-block;
+			padding: 2px;
+			margin: 0px 5px;
+			
+			select{
+				padding: 5px 15px;
+				background-color: $top-bg;
+				border: 0px;
+				color: $top-color;
+				font-size: 16px;
+			}
+		}
+		span{
+			float: left;
+			padding: 5px;
+		}
+	}
+}
+	
+
+/*--content------------------*/
+.bg-skyblue{ background: #24AAE1; }
+.bg-green{ background: #2BB572; }
+.bg-blue{ background: #2BB572; }
+.bg-pink{ background: #F176AD; }
+.bg-red{ background: #BE1D2C; }
+
+$margin-inner-y: 7px; 
+$margin-inner-x: 14px;
+$margin-outer: 20px; 
+$class-w: 190px;
+$class-h: 120px;
+
+.main-content{
+	position: relative;
+	
+	.time-container{
+		width: 100px;
+		position: absolute;
+		left: 0px;
+		top: 184px;
+		height: 100%;
+		display: inline-block;
+		.class-schedule{
+			text-align: right;
+			height: $class-h;
+			margin: $margin-inner-x 0px;
+			padding-right: 50px;
+			
+			.time-hour{
+				margin-top: 5px;
+				font-size: 16px;
+				color: #878786;
+			}
+			.time-min{
+				opacity: 0.3;
+				font-size: 14px;
+				margin-top: 15px;
+			}
+		}
+		
+	}
+	
+	.schedules{
+		display: block;
+		margin-left: 100px;
+		overflow-x: auto;
+		white-space: nowrap;
+		
+		.week{
+			display: inline-block;
+			text-align: center;
+			margin: 0px $margin-outer;
+			margin-left: -4px;
+			&:first-of-type{
+				margin-left: 0px;
+			}
+
+		}
+		.week-name{
+			font-family: $font;
+			font-weight: $font_regular;
+			text-align: center;
+			color: #878786;
+			padding: 24px;
+		}
+		.week-activity{
+			padding: 5px;
+			text-align: center;	
+			background-color: #ececec;
+			color: #878786;
+			position: relative;
+			height: 30px;
+			font-family: $font;
+			font-weight: $font_regular;
+			
+			span{
+				position: absolute;
+				top: 50%;
+				left: 0px;
+				margin-top: -12px;
+				width:100%;
+				text-align: center;
+			}
+		}
+		.day-schedule{
+			float: left;
+		}
+		.day-class-student{
+			text-align: center;
+			padding: 24px;
+			font-family: $font;
+			font-weight: $font_regular;
+		}
+		.day-class{
+			margin: $margin-inner-x $margin-inner-y;
+			width: $class-w - 20px;
+			height: $class-h - 20px;
+			color: #ffffff;
+			position: relative;
+			text-align: left;
+			padding: 10px;
+	
+
+			.day-class-time{
+				font-family: $font;
+				font-weight: $font_light;
+				margin-bottom: 5px;
+			}
+			.day-class-action{
+				font-family: $font;
+				font-weight: $font_regular;
+				margin: 5px 0px;
+			}
+			.day-class-by{
+
+				font-size: 13px;
+				font-family: $font;
+				font-weight: $font_regular;
+				margin: 8px 0px;
+			}
+			.day-class-text{
+				opacity: 0.7;
+				white-space: nowrap; 
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: 13px;
+				margin: 5px 0px;
+			}
+			img{
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				top: 10px;
+				right: 10px;
+			}
+			.day-class-rate{
+				position: absolute;
+				bottom: 5px;
+				right: 10px;
+				font-size: 13px;
+				margin: 5px 0px;
+			}
+			
+		}
+	}
+}
+/*--footer------------------*/
