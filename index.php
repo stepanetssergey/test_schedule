@@ -1,4 +1,13 @@
 <?php
+
+	$data['Lunes'] = array();
+	$data['Martes'] = array();
+	$data['Miércoles'] = array();
+	$data['Jueves'] = array();
+	$data['Viernes'] = array();
+	$data['Sábado'] = array();
+	$data['Domingo'] = array();
+
 	$bg_color = array('bg-skyblue','bg-green','bg-blue','bg-pink','bg-red');
 ?>
 
@@ -26,46 +35,17 @@
 		
 			<div id="top-filter">
 				<span>FILTRAR POR:</span>
+				<?php for($ey = 0; $ey < 5; $ey++){ ?>
 				<div class="top-filter-select">
 					<select>
+						<option>Select Option</option>
 						<option>Option 1</option>
 						<option>Option 2</option>
 						<option>Option 3</option>
 						<option>Option 4</option>
 					</select>
 				</div>
-				<div class="top-filter-select">
-					<select>
-						<option>Option 1</option>
-						<option>Option 2</option>
-						<option>Option 3</option>
-						<option>Option 4</option>
-					</select>
-				</div>
-				<div class="top-filter-select">
-					<select>
-						<option>Option 1</option>
-						<option>Option 2</option>
-						<option>Option 3</option>
-						<option>Option 4</option>
-					</select>
-				</div>
-				<div class="top-filter-select">
-					<select>
-						<option>Option 1</option>
-						<option>Option 2</option>
-						<option>Option 3</option>
-						<option>Option 4</option>
-					</select>
-				</div>
-				<div class="top-filter-select">
-					<select>
-						<option>Option 1</option>
-						<option>Option 2</option>
-						<option>Option 3</option>
-						<option>Option 4</option>
-					</select>
-				</div>
+				<?php } ?>
 				<span>OCUPACIÓN</span>
 				<div class="clear"></div>
 			</div>
@@ -85,20 +65,18 @@
 				<?php for($x = 0; $x < 6; $x++){ ?>
 				<div class="week">
 					<div class="week-name">Lunes</div>
-					<div class="week-activity">Play Music</div>
+					<div class="week-activity"><span>Play Music</span></div>
 					<?php for($xx = 1; $xx < 4; $xx++){ ?>
 					<div class="day-schedule">
 						<div class="day-class-student">Ray Charles</div>
 						<?php for($ix = 9; $ix < 15; $ix++){ ?>
 							<div class="day-class <?php echo $bg_color[rand(0,4)]; ?>">
-								<div class="day-class-inner">
-									<div clas="day-class-time"><?php echo $ix; ?>:00 - <?php echo $ix + 1; ?>:00</div>
-									<img src="img/guitarra.png">
-									<div class="day-class-action">Batería 10</div>
-									<div class="day-class-text">Marta Castillo, Juan Gomerta Castillo, Juan Gomerta Castillo, Juan Gome</div>
-									<div class="day-class-by">Mick Jagger</div>
-									<div class="day-class-rate">(2/4)</div>
-								</div>
+								<div clas="day-class-time"><?php echo $ix; ?>:00 - <?php echo $ix + 1; ?>:00</div>
+								<img src="img/guitarra.png">
+								<div class="day-class-action">Batería 10</div>
+								<div class="day-class-text">Marta Castillo, Juan Gomerta Castillo, Juan Gomerta Castillo, Juan Gome</div>
+								<div class="day-class-by">Mick Jagger</div>
+								<div class="day-class-rate">(2/4)</div>
 							</div>
 						<?php } ?>
 					</div>
@@ -111,9 +89,5 @@
 			footer
 		</div>
 	</div>
-	
-
-	
-
 </body>
 </html>

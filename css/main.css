@@ -46,17 +46,20 @@ body {
   #main-top #top-title {
     display: block;
     padding: 20px 0px;
-    font-size: 24px;
-    position: relative; }
+    font-size: 34px;
+    position: relative;
+    font-family: "Lato Light"; }
     #main-top #top-title .top-side {
-      width: 40%;
+      width: 25%;
       text-align: center;
       display: inline-block;
       font-size: 14px;
       position: absolute;
       top: 50%;
       line-height: 20px;
-      margin-top: -10px; }
+      margin-top: -10px;
+      font-family: "Lato Light";
+      color: #a7a7a7; }
     #main-top #top-title #top-side-left {
       left: 0px; }
     #main-top #top-title #top-side-right {
@@ -74,17 +77,17 @@ body {
     display: block;
     margin: 10px 3%;
     padding: 15px 20px;
-    border-top: 3px solid #ffffff; }
+    border-top: 1px solid #ffffff; }
     #main-top #top-filter .top-filter-select {
       float: left;
       display: inline-block;
-      padding: 2px; }
+      padding: 2px;
+      margin: 0px 5px; }
       #main-top #top-filter .top-filter-select select {
         padding: 5px 15px;
         background-color: #303437;
         border: 0px;
-        color: #ffffff;
-        font-size: 15px; }
+        color: #ffffff; }
     #main-top #top-filter span {
       float: left;
       padding: 5px; }
@@ -111,19 +114,19 @@ body {
     width: 50px;
     position: absolute;
     left: 0px;
-    top: 165px;
+    top: 190px;
     height: 100%;
     display: inline-block; }
     #main-content #time-container .class-schedule {
       text-align: right;
-      height: 150px;
-      margin: 14px 0px; }
+      height: 120px;
+      margin: 7px; }
       #main-content #time-container .class-schedule .time-hour {
         margin-top: 5px; }
       #main-content #time-container .class-schedule .time-min {
         opacity: 0.3;
         font-size: 14px;
-        margin-top: 20px; }
+        margin-top: 10px; }
   #main-content #schedules {
     display: block;
     margin-left: 60px;
@@ -132,62 +135,70 @@ body {
     #main-content #schedules .week {
       display: inline-block;
       text-align: center;
-      margin-left: -4px;
-      margin: 0px 20px; }
+      margin: 0px 20px;
+      margin-left: -4px; }
       #main-content #schedules .week:first-of-type {
         margin-left: 0px; }
     #main-content #schedules .week-name {
-      font-family: "Lato-Regular";
+      font-family: "Lato Regular";
       text-align: center;
       color: #878786;
-      padding: 18px;
-      border-bottom: 1px solid gray; }
+      padding: 24px; }
     #main-content #schedules .week-activity {
       padding: 5px;
       text-align: center;
       background-color: #ececec;
-      color: #878786; }
+      color: #878786;
+      position: relative;
+      height: 30px;
+      font-family: "Lato Regular"; }
+      #main-content #schedules .week-activity span {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        margin-top: -10px;
+        width: 100%;
+        text-align: center; }
     #main-content #schedules .day-schedule {
       float: left; }
     #main-content #schedules .day-class-student {
       text-align: center;
-      padding: 20px; }
+      padding: 24px;
+      font-family: "Lato Regular"; }
     #main-content #schedules .day-class {
-      margin: 14px 7px;
-      width: 200px;
-      height: 150px;
+      margin: 7px;
+      width: 170px;
+      height: 100px;
       color: #ffffff;
-      border: 1px solid #ffffff; }
-      #main-content #schedules .day-class .day-class-inner {
-        margin: 15px;
-        position: relative;
-        text-align: left; }
-        #main-content #schedules .day-class .day-class-inner div {
-          margin: 8px 0px; }
-        #main-content #schedules .day-class .day-class-inner .day-class-time {
-          font-size: 22px; }
-        #main-content #schedules .day-class .day-class-inner .day-class-action {
-          font-size: 25px; }
-        #main-content #schedules .day-class .day-class-inner .day-class-by {
-          margin-top: 16px;
-          font-size: 15px; }
-        #main-content #schedules .day-class .day-class-inner .day-class-text {
-          opacity: 0.7;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          font-size: 16px; }
-        #main-content #schedules .day-class .day-class-inner img {
-          width: 35px;
-          height: 35px;
-          position: absolute;
-          top: -5px;
-          right: 0px; }
-        #main-content #schedules .day-class .day-class-inner .day-class-rate {
-          position: absolute;
-          bottom: -10px;
-          right: -0px;
-          font-size: 15px; }
+      position: relative;
+      text-align: left;
+      padding: 10px; }
+      #main-content #schedules .day-class div {
+        margin: 5px 0px; }
+      #main-content #schedules .day-class .day-class-time {
+        font-family: "Lato Light"; }
+      #main-content #schedules .day-class .day-class-action {
+        font-family: "Lato Regular"; }
+      #main-content #schedules .day-class .day-class-by {
+        font-size: 13px;
+        font-family: "Lato Regular"; }
+      #main-content #schedules .day-class .day-class-text {
+        opacity: 0.7;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px; }
+      #main-content #schedules .day-class img {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 10px;
+        right: 10px; }
+      #main-content #schedules .day-class .day-class-rate {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 13px; }
 
 /*--footer------------------*/
 #main-footer {
