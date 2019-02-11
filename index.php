@@ -66,7 +66,7 @@
 				<div class="week">
 					<div class="week-name">Lunes</div>
 					<div class="week-activity"><span>Play Music</span></div>
-					<?php for($xx = 1; $xx < 4; $xx++){ ?>
+					<?php for($xx = 1; $xx < rand(2,5); $xx++){ ?>
 					<div class="day-schedule">
 						<div class="day-class-student">Ray Charles</div>
 						<?php for($ix = 9; $ix < 15; $ix++){ ?>
