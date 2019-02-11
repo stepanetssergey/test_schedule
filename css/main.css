@@ -1,0 +1,201 @@
+/*--global------------------*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.relative {
+  position: relative; }
+
+.clear {
+  clear: both; }
+
+div {
+  margin: 0px; }
+
+body {
+  font-size: 20px;
+  color: #222222;
+  font-family: "Lato"; }
+
+/*--top------------------*/
+.main-top {
+  background-color: #303437;
+  color: #ffffff;
+  text-align: center; }
+  .main-top .top-title {
+    display: block;
+    padding: 20px 0px;
+    font-size: 34px;
+    position: relative;
+    font-family: "Lato";
+    font-weight: 100; }
+    .main-top .top-title .top-side {
+      width: 25%;
+      text-align: center;
+      display: inline-block;
+      font-size: 14px;
+      position: absolute;
+      top: 50%;
+      line-height: 20px;
+      margin-top: -10px;
+      font-family: "Lato";
+      font-weight: 100;
+      color: #a7a7a7; }
+    .main-top .top-title .top-side-left {
+      left: 0px; }
+    .main-top .top-title .top-side-right {
+      right: 0px; }
+      .main-top .top-title .top-side-right span {
+        position: relative; }
+      .main-top .top-title .top-side-right img {
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        top: 50%;
+        margin-top: -16px;
+        margin-left: -40px; }
+  .main-top .top-filter {
+    display: block;
+    margin: 10px 3%;
+    padding: 15px 20px;
+    border-top: 1px solid #ececec; }
+    .main-top .top-filter .top-filter-select {
+      float: left;
+      display: inline-block;
+      padding: 2px;
+      margin: 0px 5px; }
+      .main-top .top-filter .top-filter-select select {
+        padding: 5px 15px;
+        background-color: #303437;
+        border: 0px;
+        color: #ffffff;
+        font-size: 16px; }
+    .main-top .top-filter span {
+      float: left;
+      padding: 5px; }
+
+/*--content------------------*/
+.bg-skyblue {
+  background: #24AAE1; }
+
+.bg-green {
+  background: #2BB572; }
+
+.bg-blue {
+  background: #2BB572; }
+
+.bg-pink {
+  background: #F176AD; }
+
+.bg-red {
+  background: #BE1D2C; }
+
+.main-content {
+  position: relative; }
+  .main-content .time-container {
+    width: 100px;
+    position: absolute;
+    left: 0px;
+    top: 184px;
+    height: 100%;
+    display: inline-block; }
+    .main-content .time-container .class-schedule {
+      text-align: right;
+      height: 120px;
+      margin: 14px 0px;
+      padding-right: 50px; }
+      .main-content .time-container .class-schedule .time-hour {
+        margin-top: 5px;
+        font-size: 16px;
+        color: #878786; }
+      .main-content .time-container .class-schedule .time-min {
+        opacity: 0.3;
+        font-size: 14px;
+        margin-top: 15px; }
+  .main-content .schedules {
+    display: block;
+    margin-left: 100px;
+    overflow-x: auto;
+    white-space: nowrap; }
+    .main-content .schedules .week {
+      display: inline-block;
+      text-align: center;
+      margin: 0px 20px;
+      margin-left: -4px; }
+      .main-content .schedules .week:first-of-type {
+        margin-left: 0px; }
+    .main-content .schedules .week-name {
+      font-family: "Lato";
+      font-weight: 400;
+      text-align: center;
+      color: #878786;
+      padding: 24px; }
+    .main-content .schedules .week-activity {
+      padding: 5px;
+      text-align: center;
+      background-color: #ececec;
+      color: #878786;
+      position: relative;
+      height: 30px;
+      font-family: "Lato";
+      font-weight: 400; }
+      .main-content .schedules .week-activity span {
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        margin-top: -12px;
+        width: 100%;
+        text-align: center; }
+    .main-content .schedules .day-schedule {
+      float: left; }
+    .main-content .schedules .day-class-student {
+      text-align: center;
+      padding: 24px;
+      font-family: "Lato";
+      font-weight: 400; }
+    .main-content .schedules .day-class {
+      margin: 14px 7px;
+      width: 170px;
+      height: 100px;
+      color: #ffffff;
+      position: relative;
+      text-align: left;
+      padding: 10px; }
+      .main-content .schedules .day-class .day-class-time {
+        font-family: "Lato";
+        font-weight: 100;
+        margin-bottom: 5px; }
+      .main-content .schedules .day-class .day-class-action {
+        font-family: "Lato";
+        font-weight: 400;
+        margin: 5px 0px; }
+      .main-content .schedules .day-class .day-class-by {
+        font-size: 13px;
+        font-family: "Lato";
+        font-weight: 400;
+        margin: 8px 0px; }
+      .main-content .schedules .day-class .day-class-text {
+        opacity: 0.7;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 13px;
+        margin: 5px 0px; }
+      .main-content .schedules .day-class img {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 10px;
+        right: 10px; }
+      .main-content .schedules .day-class .day-class-rate {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        font-size: 13px;
+        margin: 5px 0px; }
+
+/*--footer------------------*/
+
+/*# sourceMappingURL=main.css.map */
